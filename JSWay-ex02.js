@@ -36,12 +36,29 @@ class Clock {
 
 let clock = new Clock({
   template: 'h:m:s'
+  
 });
-clock.start()
+//clock.start()
 
 class ExtendedClock extends Clock {
   constructor(settings){
       super(settings)
-      this.precision =( )
+      this.precision =(settings.precision == null)? 1000 : settings.precision
+  }
+
+  start(){
+    this.render
+    this.timer = setInterval(() => this.render(),
+    this.precision);
   }
 }
+
+let lowResolutionCheck = new ExtendedClock({
+  template: 'h:m:s' ,
+  precision: 10000
+});
+
+lowResolutionCheck.start()
+
+
+
