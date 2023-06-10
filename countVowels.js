@@ -35,3 +35,9 @@ function getCount(str) {
 //     return vowels.includes(letter)? true : false;
 //   }).length;
 // }
+
+
+//or  
+// function getCount(str) {
+//   return str.split('').reduce((acc, x) => 'aeiou'.includes(x) ? acc + 1 : acc, 0)
+// }
