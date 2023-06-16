@@ -15,7 +15,7 @@ function getCount(str) {
   console.log(count); // Print the count outside the loop if you want to see the final result
   return count;
 }
-getCount('forEverYoung')
+getCount('forEverYounger')
 
 //OR
 // function getCount(str) {
