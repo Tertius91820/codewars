@@ -58,7 +58,7 @@ let lowResolutionCheck = new ExtendedClock({
   precision: 10000
 });
 
-lowResolutionCheck.start
+lowResolutionCheck.start()
 
 
 
