@@ -1,1 +1,3 @@
 # codewars
+
+Some CodeWars done
