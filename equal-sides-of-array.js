@@ -28,7 +28,22 @@
 // If you are given an array with multiple answers, return the lowest correct index.
 
 
-function findEvenIndex(arr)
-{
-  //Code goes here!
+function findEvenIndex(arr) {
+  let equalIndex = -1;
+
+  arr.forEach((item, index) => {
+    let leftSum = arr.slice(0, index).reduce((sum, item) => sum + item, 0);
+    let rightSum = arr.slice(index + 1).reduce((sum, item) => sum + item, 0);
+
+    if (leftSum === rightSum && equalIndex === -1) {
+      equalIndex = index;
+    }
+  });
+
+  console.log(equalIndex);
 }
+
+findEvenIndex([1,2,3,4,3,2,1])
+//loop through
+//reduce left and right of each indexx
+//get the subset array on each side of index -slice? 
