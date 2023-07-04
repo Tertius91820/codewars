@@ -33,7 +33,7 @@ function findEvenIndex(arr) {
 
   arr.forEach((item, index) => {
     let leftSum = arr.slice(0, index).reduce((sum, item) => sum + item, 0);
-    let rightSum = arr.slice(index + 1).reduce((sum, item) => sum + item, 0);
+    let rightSum = arr.slice(index + 1,arr.length).reduce((sum, item) => sum + item, 0);
 
     if (leftSum === rightSum && equalIndex === -1) {
       equalIndex = index;
