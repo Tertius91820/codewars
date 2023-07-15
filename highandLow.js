@@ -1,8 +1,8 @@
 function highAndLow(numbers){
-  let Arr = numbers.split(" ");
-  let sortedArr = Arr.sort(function(a,b){return a-b});
-  console.log(sortedArr)
-   let firstandlast = sortedArr[0]+ sortedArr[sortedArr.length-1]
+  let Arr = numbers.split(" ").sort((a,b)=> a-b);
+  console.log(Arr)
+   let firstandlast = Arr[0]+','+ Arr[Arr.length-1]
+  console.log(firstandlast);
    return firstandlast
  }
  

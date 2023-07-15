@@ -1,7 +1,7 @@
 function getCount(str) {
   let count = 0;
-  let arr = str.split("");
-  
+  let arr = str.toLowerCase().split("");
+
   arr.forEach(function(item) {
     if (item === 'a'||
        item === 'e'||
@@ -15,6 +15,7 @@ function getCount(str) {
   console.log(count); // Print the count outside the loop if you want to see the final result
   return count;
 }
+getCount('forEverYoung')
 
 //OR
 // function getCount(str) {
@@ -39,5 +40,5 @@ function getCount(str) {
 
 //or  
 // function getCount(str) {
-//   return str.split('').reduce((acc, x) => 'aeiou'.includes(x) ? acc + 1 : acc, 0)
+//   return str.split('').reduce((e, i) => 'aeiou'.includes(i) ? e + 1 : e, 0)
 // }
