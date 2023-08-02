@@ -7,5 +7,11 @@
 
 
 function pigIt(str){
-  return str.split(' ').map((item,index) => )
+  console.log(str)
+  let marks = ['.',',','!','?','"']
+ let result = str.split(' ').map(word => !marks.includes(word) ? word.slice(1)+word[0]+'ay': word).join(' ')
+
+  console.log(result);
 }
+
+pigIt('Hello world ?')
