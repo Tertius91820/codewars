@@ -8,9 +8,9 @@
 function moveZeros(arr) {
   let sorted =[];
   let zeros =[]
-  arr.map(item => item === 0 ? zeros.push(0): sorted.unshift(item))
+  arr.map(item => item === 0 ? zeros.push(0): sorted.push(item))
 
-  let joined = ((sorted.reverse()).concat(zeros))
+  let joined = (sorted.concat(zeros))
   console.log(joined);
  }
 
